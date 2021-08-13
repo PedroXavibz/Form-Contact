@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Contact</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/dcf3890342.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <form id="form" action="">
+        <h2 class="form--title">Entre em Contato</h2>
+
+        <label for="form__label-input--name" class="form__label-input">
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            placeholder="Nome"
+            id="form__label-input--name"
+          />
+          <i class="far fa-user"></i>
+          <span class="form__label-input--warning hidden">Campo Inválido!</span>
+        </label>
+
+        <label for="form__label-input--email" class="form__label-input">
+          <input
+            type="text"
+            name="email"
+            autocomplete="off"
+            placeholder="Email"
+            id="form__label-input--email"
+          />
+          <i class="far fa-envelope"></i>
+          <span class="form__label-input--warning hidden">Campo Inválido!</span>
+        </label>
+
+        <label for="form__label-input--phone" class="form__label-input">
+          <input
+            type="text"
+            name="phone"
+            autocomplete="off"
+            placeholder="Telefone"
+            maxlength="15"
+            id="form__label-input--phone"
+          />
+          <i class="fas fa-mobile-alt"></i>
+          <span class="form__label-input--warning hidden">Campo Inválido!</span>
+        </label>
+
+        <button class="btn-send">Enviar</button>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
