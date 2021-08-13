@@ -6,8 +6,9 @@ const form = document.getElementById("form");
 const inputName = document.getElementById("form__label-input--name");
 const inputEmail = document.getElementById("form__label-input--email");
 const inputPhone = document.getElementById("form__label-input--phone");
-const [warningName, warningEmail, warningPhone] =
-  document.querySelectorAll(".hidden");
+const [warningName, warningEmail, warningPhone] = document.querySelectorAll(
+  ".form__label-input--warning"
+);
 
 ///////////////////////////////////////////////////////////
 // REGEX FUNCTIONS
@@ -124,23 +125,23 @@ form.addEventListener("submit", function (e) {
   const isPhoneValid = regexPhone(inputPhoneValue) === true;
 
   if (!isNameValid) {
-    warningName.style.opacity = 1;
+    warningName.classList.remove("hidden");
     createBorder(inputName, false);
   }
 
   if (!isEmailValid) {
-    warningEmail.style.opacity = 1;
+    warningEmail.classList.remove("hidden");
     createBorder(inputEmail, false);
   }
 
   if (!isPhoneValid) {
-    warningPhone.style.opacity = 1;
+    warningPhone.classList.remove("hidden");
     createBorder(inputPhone, false);
   }
 
   if (!isNameValid || !isEmailValid || !isPhoneValid) return false;
 
-  warningName.style.opacity = 0;
-  warningEmail.style.opacity = 0;
-  warningPhone.style.opacity = 0;
+  warningName.classList.add("hidden");
+  warningEmail.classList.add("hidden");
+  warningPhone.classList.add("hidden");
 });
