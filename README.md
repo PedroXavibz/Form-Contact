@@ -9,4 +9,4 @@
     <li>Regex</li>
 </ul>
 
-<img src='https://user-images.githubusercontent.com/80354012/129517614-abd724d6-8ead-4efd-88d3-e7d9617645b7.png'>
+<img src='https://user-images.githubusercontent.com/80354012/131073349-21144ac2-3eaa-49db-85d5-0e8aa7383f30.png'>
